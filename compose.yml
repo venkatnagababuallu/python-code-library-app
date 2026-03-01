@@ -6,25 +6,25 @@ services:
             - "3306:3306"
         deploy:
             replicas: 1
-    auth:
+    auth_service:
         image: venkatanagababuallu/library:authimage
         ports:
             - "5001:5001"
         deploy:
             replicas: 1
-    book:
+    book_service:
         image: venkatanagababuallu/library:bookimage
         ports:
             - "5002:5002"
         deploy:
             replicas: 1
-    borrow:
+    borrow_service:
         image: venkatanagababuallu/library:borrowimage
         ports:
             - "5003:5003"
         deploy:
             replicas: 1
-    app:
+    app_service:
         image: venkatanagababuallu/library:appimage
         ports:
             - "5000:5000"
