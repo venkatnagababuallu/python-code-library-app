@@ -1,31 +1,31 @@
 ---
 services:
     db:
-        image: venkatanagababuallu/myrepo:dbimage
+        image: venkatanagababuallu/library:dbimage
         ports:
             - "3306:3306"
         deploy:
             replicas: 1
     auth:
-        image: venkatanagababuallu/myrepo:authimage
+        image: venkatanagababuallu/library:authimage
         ports:
             - "5001:5001"
         deploy:
             replicas: 1
     book:
-        image: venkatanagababuallu/myrepo:bookimage
+        image: venkatanagababuallu/library:bookimage
         ports:
             - "5002:5002"
         deploy:
             replicas: 1
     borrow:
-        image: venkatanagababuallu/myrepo:borrowimage
+        image: venkatanagababuallu/library:borrowimage
         ports:
             - "5003:5003"
         deploy:
             replicas: 1
     app:
-        image: venkatanagababuallu/myrepo:appimage
+        image: venkatanagababuallu/library:appimage
         ports:
             - "5000:5000"
         deploy:
