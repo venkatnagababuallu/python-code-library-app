@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: borrow
+  namespace: online-library
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: borrow
+  template:
+    metadata:
+      labels:
+        app: borrow
+    spec:
+      containers:
+        - name: borrow
+          image: venkatanagababuallu/pythonlibrary:borrowimage
+          ports:
+            - containerPort: 5003
