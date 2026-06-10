@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: venkatanagababuallu/pythonlibrary:dbimage
+          image: venkatanagababuallu/library:dbimage
           ports:
             - containerPort: 3306
 
