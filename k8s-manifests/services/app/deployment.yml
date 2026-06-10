@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: venkatanagababuallu/pythonlibrary:appimage
+          image: venkatanagababuallu/library:appimage
           ports:
             - containerPort: 5000
