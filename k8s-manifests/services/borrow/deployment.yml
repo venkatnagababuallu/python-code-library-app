@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: borrow
-          image: venkatanagababuallu/pythonlibrary:borrowimage
+          image: venkatanagababuallu/library:borrowimage
           ports:
             - containerPort: 5003
